@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  background-image: url('../pexels-freestockpro-1003864.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.flight-booking-app {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+h2 {
+  color: #27ae60;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button {
+  background-color: white;
+  color: #3498db;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background-color: #ecf0f1;
+}
+
+/* Search Container */
+.search-container {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Flights Container */
+.flights-container {
+  margin-top: 20px;
+}
+
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flight-card h3 {
+  color: #2c3e50;
+}
+
+.flight-card p {
+  margin: 5px 0;
+}
+
+.flight-card button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.flight-card button:hover {
+  background-color: #1e8449;
+}
+
+/* Booking History */
+.booking-history {
+  margin-top: 30px;
+}
+
+.booking-card {
+  border: 1px solid #27ae60;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 400px;
+  background-color: #ecf9f1;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h3 {
+  color: #27ae60;
+}
+
+.booking-card p {
+  margin: 5px 0;
+}
+
+.booking-card button {
+  background-color: #e74c3c;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.booking-card button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+  }
+
+  .search-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .flight-card,
+  .booking-card {
+    max-width: 90%;
+  }
+}
